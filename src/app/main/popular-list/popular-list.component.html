@@ -1,0 +1,9 @@
+
+<a  *ngFor="let song of songsData" href="{{ song.authorUrl }}" >
+    <div class="songs-data" >
+        <img src="{{ song.imgUrl }}">
+        <p id="title">{{ song.name }}</p>
+        <p id="author">{{ song.authorName }}</p>
+    </div>
+</a>
+

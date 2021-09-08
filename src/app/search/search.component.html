@@ -1,0 +1,12 @@
+<div class="search"  [ngClass]="{filled: !filled}">
+    <p class="title">Search for any song</p>
+    <input [formControl]='nameControl' placeholder="Song name">
+    <button class="btn" (click)="onSearch()">Search</button>
+    <p class="title" *ngIf="filled">Title/Author</p>
+    <div class="song" *ngFor="let song of songsArray" >
+        <p>{{ song.name }} - {{ song.authorName }}</p>
+    </div>
+</div>
+
+
+
